@@ -1,0 +1,26 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#surface{
+	z-index: 1;
+	display: block;
+	position: relative;
+	margin: auto;
+	border: 0 solid #000000;
+	vertical-align: middle;
+}
+#plus_score{
+	display: none;
+	position: absolute;
+	cursor: default;
+	text-align: center;
+	width: 80px;
+	height: 50px;
+	font-size: 50px;
+	top: 50%;
+	left: 50%;
+	margin-left: -40px;
+	margin-top: -25px;
+	z-index: 2;
+}

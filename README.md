@@ -20,7 +20,7 @@ You think it's easy, let's find out if you were right!
 Click the top triangle on the screen, but you can only guess incorrectly 3 times per level.
 
 ### Points:
-* 1 point for each correctly clicked triangle
+1 point / correctly clicked triangle
 
 
 ## License

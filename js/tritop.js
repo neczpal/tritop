@@ -146,7 +146,6 @@ function drawLife(x, y, r){
 		ctx.fillStyle = life_color[i-1];
 		ctx.beginPath();
 		ctx.arc(x, y, r, -0.5*Math.PI + 2 * Math.PI * (i-1) / lives, 2 * Math.PI * i / lives -0.5*Math.PI);
-		//ctx.arc(x, y, 20, 0, 2 * Math.PI - i * current_life / lives * Math.PI);
 		ctx.closePath();
 						
 		ctx.fill();
@@ -174,20 +173,12 @@ function drawLife(x, y, r){
 	
 }
 function drawTime(x, y, r){
-	/*ctx.beginPath();
-	ctx.arc(x, y, r+2, 0, 2 * Math.PI);
-	ctx.closePath();
-	
-	ctx.fillStyle = "#000";	
-	ctx.fill();
-*/
 	ctx.lineWidth = 2;
 	for(let i=left_time; i > 0; i--){
 		ctx.strokeStyle = time_color[i-1];
 
 		ctx.beginPath();
 		ctx.arc(x, y, r, -0.5*Math.PI + 2 * Math.PI * (i-1) / time, 2 * Math.PI * i / time -0.5*Math.PI);
-		//ctx.arc(x, y, 20, 0, 2 * Math.PI - i * current_life / lives * Math.PI);
 		ctx.closePath();
 						
 		ctx.stroke();
@@ -243,7 +234,6 @@ function drawBigScore(x, y){
 	}
 }
 function addTime(n){
-	//time_color[n+left_time-1] = _rcnored();
 	drawGame();
 	if(n > 0){
 		time ++;
@@ -277,7 +267,6 @@ function addWires(n){
 			}
 		}while(!connect);
 
-		//console.log(temp.sizeof());
         wires.push(temp);
 	}
     n--;
@@ -341,11 +330,6 @@ function init(){
 	view_height = c.height = window.innerHeight;
 
 	c.addEventListener("mousedown", doMouseDown, false);
-	//c.addEventListener("mouseup", doMouseUp, false);
-	//c.addEventListener("touchstart", doMouseDown, false);
-	//c.addEventListener("touchend", handleEnd, false);
-	//window.addEventListener("keydown", doKeyDown, false);
-	//window.addEventListener("keyup", doKeyUp, false);
 
 	ps = $("#plus_score");
 	if(window.localStorage.getItem("high_score")){
@@ -357,10 +341,8 @@ function init(){
 	drawMenu();
 }
 function doMouseDown(event){
-	//event.preventDefault();
 	if(!lose){
 		if(wires[wires.length-1].inside(event.pageX, event.pageY)){
-			//animPlusScore(wires[wires.length-1], true);
 			wires.pop();
 			score++;
 			recolor();

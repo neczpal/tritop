@@ -357,7 +357,6 @@ function doMouseDown(event){
 		}else{
 			animPlusScore();
 			current_life--;
-			window.navigator.vibrate(200);
 			drawGame();
 			if(current_life <= 0){
 				lose = true;

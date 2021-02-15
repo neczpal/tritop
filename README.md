@@ -25,7 +25,7 @@ Click the top triangle on the screen, but you can only guess incorrectly 3 times
 
 ## License
 
-All Rights Reserved.
+MIT
 
 Copyright (c) 2021 Neczpál Ábel.
 
@@ -38,4 +38,4 @@ however, please contact me before doing so.
 
 Neczpál Ábel - [neczpal@gmail.com](mailto:neczpal@gmail.com)
 
-Project Link: [https://github.com/neczpal/tritop](https://github.com/neczpal/tritop)
+Project Link - [https://github.com/neczpal/tritop](https://github.com/neczpal/tritop)
